@@ -1,0 +1,7 @@
+[
+    {
+      "entity": "orders_details",
+      "path": "../../data",
+      "keys": ["order_id","product_id"]
+    }
+]

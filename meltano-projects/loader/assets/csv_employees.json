@@ -1,0 +1,7 @@
+[
+    {
+      "entity": "employees",
+      "path": "../../data/postgres/employees",
+      "keys": ["employee_id"]
+    }
+]

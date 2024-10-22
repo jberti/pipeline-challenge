@@ -1,0 +1,72 @@
+version: 1
+default_environment: dev
+project_id: 1ed17556-06cf-4547-acf4-7a0f42686ae1
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+  - name: tap-csv-orders_details
+    inherit_from: tap-csv
+    config:
+      add_metadata_columns: false      
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-categories
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-customers
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-employees
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-orders
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-products
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-region
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-shippers
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-suppliers
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-territories
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-employee_territories
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json
+  - name: tap-csv-us_states
+    inherit_from: tap-csv
+    config:
+      csv_files_definition: ./assets/csv_defs.json 
+  loaders:
+  - name: target-postgres
+    variant: meltanolabs
+    pip_url: meltanolabs-target-postgres
+    config:
+      host: localhost
+      port: 5435
+      user: northwind_user
+      password: thewindisblowing
+      database: northwind
+      default_target_schema: ingested

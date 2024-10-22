@@ -1,0 +1,7 @@
+[
+    {
+      "entity": "categories",
+      "path": "../../data/postgres/categories",
+      "keys": ["category_id"]
+    }
+]

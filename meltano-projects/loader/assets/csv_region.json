@@ -1,0 +1,7 @@
+[
+    {
+      "entity": "region",
+      "path": "../../data/postgres/region",
+      "keys": ["region_id"]
+    }
+]

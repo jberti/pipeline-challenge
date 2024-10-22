@@ -1,0 +1,7 @@
+[
+    {
+      "entity": "customer_customer_demo",
+      "path": "../../data/postgres/customer_customer_demo",
+      "keys": ["customer_id", "customer_type_id"]
+    }
+]

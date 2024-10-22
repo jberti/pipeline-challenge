@@ -1,0 +1,62 @@
+[
+    {
+      "entity": "orders_details",
+      "path": "../../data/csv/",
+      "keys": ["order_id","product_id"]
+    },
+    {
+      "entity": "categories",
+      "path": "../../data/postgres/categories",
+      "keys": ["category_id"]
+    },
+    {
+      "entity": "customers",
+      "path": "../../data/postgres/customers",
+      "keys": ["customer_id"]
+    },
+    {
+      "entity": "employee_territories",
+      "path": "../../data/postgres/employee_territories",
+      "keys": ["employee_id","territory_id"]
+    },
+    {
+      "entity": "employees",
+      "path": "../../data/postgres/employees",
+      "keys": ["employee_id"]
+    },
+    {
+      "entity": "orders",
+      "path": "../../data/postgres/orders",
+      "keys": ["order_id"]
+    },
+    {
+      "entity": "products",
+      "path": "../../data/postgres/products",
+      "keys": ["product_id"]
+    },
+    {
+      "entity": "region",
+      "path": "../../data/postgres/region",
+      "keys": ["region_id"]
+    },
+    {
+      "entity": "shippers",
+      "path": "../../data/postgres/shippers",
+      "keys": ["shipper_id"]
+    },
+    {
+      "entity": "suppliers",
+      "path": "../../data/postgres/suppliers",
+      "keys": ["supplier_id"]
+    },
+    {
+      "entity": "territories",
+      "path": "../../data/postgres/territories",
+      "keys": ["territory_id"]
+    },
+    {
+      "entity": "us_states",
+      "path": "../../data/postgres/us_states",
+      "keys": ["state_id"]
+    }
+]

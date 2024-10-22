@@ -1,0 +1,7 @@
+[
+    {
+      "entity": "shippers",
+      "path": "../../data/postgres/shippers",
+      "keys": ["shipper_id"]
+    }
+]
