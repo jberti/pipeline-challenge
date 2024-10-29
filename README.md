@@ -11,9 +11,6 @@ Because of this, at DAG I ended up making the calls to Meltano via BashOperator,
 
 But I believe that this ended up limiting my configuration options, where, for example, I was unable to meet the requirement to allow a start date to be provided for reading the data to be integrated. Perhaps I was also limited in fulfilling the requirement to create a directory with the current day's date in the path of the files to be saved.
 
-
-Translated with DeepL.com (free version) 
-
 ## Technologies
 
 * **Programming Language:** Python
