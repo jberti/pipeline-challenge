@@ -11,6 +11,12 @@ Because of this, at DAG I ended up making the calls to Meltano via BashOperator,
 
 But I believe that this ended up limiting my configuration options, where, for example, I was unable to meet the requirement to allow a start date to be provided for reading the data to be integrated. Perhaps I was also limited in fulfilling the requirement to create a directory with the current day's date in the path of the files to be saved.
 
+## Problem to be solved
+
+The challenge consists in moving data from two diferent sources of data(a csv file and a PostgreSQL database) to a single place, in local file system. After that, there is a second step wich is to move the data from the local file system to a PostgreSQL database.
+The data folder contains the csv data to be read and a SQL script used to restore the database using docker.
+
+
 ## Technologies
 
 * **Programming Language:** Python
